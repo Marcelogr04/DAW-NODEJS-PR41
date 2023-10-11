@@ -1,0 +1,15 @@
+<div class="deleteDiv">
+    <h1>Add car:</h1>
+    <div class="cocheDel">
+        <form method="post" action="/actionAdd" enctype="multipart/form-data">
+            <div class="formRow">Nom: <input type="text" name="nom" required/></div>
+            <div class="formRow">Preu: <input type="text" name="preu" required/></div>
+            <div class="formRow">Descripció: <textarea type="text" name="descripcio" required></textarea></div>
+            <div class="formRow">Nova imatge:<input type="file" name="files" required></div>
+            <div class="formRow"><input type="submit" value="Accept"></div>
+        </form>
+        <% if (error) { %>
+            <div class="formRow"><%= error %></div>
+        <% } %>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="deleteDiv">
+    <h1>You want to modify the following car:</h1>
+    <div class="cocheDel">
+        <form method="post" action="/actionEdit" enctype="multipart/form-data">
+            <div class="formRow">Nom: <input type="text" name="nom" placeholder="<%= infoCoche.nom %>"/></div>
+            <div class="formRow"><h3>Id: <%= infoCoche.id %></h3></div>
+            <input type="hidden" id="id" name="id" value="<%= infoCoche.id %>" required>
+            <div class="formRow">Preu: <input type="text" name="preu" placeholder="<%= infoCoche.preu %>"/></div>
+            <div class="formRow">Descripció: <textarea type="text" name="descripcio" placeholder="<%= infoCoche.descripcio %>"></textarea></div>
+            <div class="formRow"><img src='/images/<%= infoCoche.image %>'></div>
+            <div class="formRow">Nova imatge:<input type="file" name="files"></div>
+            <div class="formRow"><input type="submit" value="Accept"></div>
+        </form>
+        <% if (error) { %>
+            <div class="formRow"><%= error %></div>
+        <% } %>
+    </div>
+</div>

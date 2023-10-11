@@ -1,0 +1,21 @@
+<div class="deleteDiv">
+    <h1>You want to delete the following car:</h1>
+    <div class="cocheDel">
+        <h1>
+            <%= infoCoche.nom %>
+        </h1>
+        <h3>
+            Id: <%= infoCoche.id %>
+        </h3>
+        <h3>
+            Preu: <%= infoCoche.preu %>
+        </h3>
+        <p>
+            <%= infoCoche.descripcio %>
+        </p>
+        <img src='/images/<%= infoCoche.image %>'>
+        <a class="botonR" href="/actionDelete?id=<%= infoCoche.id %>">REMOVE</a>
+    </div>
+</div>
+    
+    

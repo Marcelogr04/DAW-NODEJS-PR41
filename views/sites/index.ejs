@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--
+Aquest arxiu rep una llista amb noms de naus
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- A la capçalera no li fa falta cap informació, passem un objecte buit -->
+<%- include('../partials/head', {}); %>
+<title>Cars</title>
+</head>
+<body>
+    <div class="columsDiv">
+<!-- Al parcial de 'itemBody' li fa falta la informació que hem rebut -->
+<%- include('../partials/indexBody', { llista: llista }); %>
+<%- include('../partials/menu', {}); %>
+    </div>
+</body>
+</html>

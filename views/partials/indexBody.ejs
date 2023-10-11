@@ -1,0 +1,9 @@
+<!--
+Aquest arxiu rep una llista amb noms de naus
+genera un enllaç ‘html’ cap a la pàgina de item que correspon a aquell nom
+-->
+<%
+for (let i = 0; i < llista.length; i++) {
+__append("<div class=\"coche\"><img src='/images/" + llista2[i] + "'><h2>" + llista[i] + "</h2><a class=\"botonE\" href='/edit?id=" + llista3[i] + "'>Edit</a><a class=\"botonD\" href='/delete?id=" + llista3[i] + "'>Delete</a></div>")
+}
+%>
